@@ -1,0 +1,124 @@
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto; */
+  /* padding: 2rem; */
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+
+  background-image: url("landscape.jpeg");
+  background-size: cover;
+  background-position-y: 20%;
+}
+
+.PageLayout {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 2vh 10% 0 10%;
+}
+
+.emotionsGrid{
+  width: 51%;
+  height: 60%;
+  background-color: aquamarine;
+  background-image: url("MoodQUadrantsEmojis.webp");
+  background-size:cover;
+  justify-self: center;
+  align-self: center;
+}
+
+.jsonResponse{
+  background-color: rgba(20, 21, 21, 0.605);
+  color: rgb(55, 176, 49);
+  padding: 4%;
+  max-height: 25vh;
+  overflow: scroll;
+  p {
+    color: rgb(55, 176, 49);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 1.3vw;
+  }
+}
+
+.inputRow {
+  display:flex;
+  justify-content: end;
+  align-content: center;
+  margin: 0.2vh;
+  gap: 0.5vh;
+
+}
+
+.inputField {
+  width: 60%;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.298);
+  border-color: rgba(255, 228, 196, 0);
+  border: none;
+}
+.inputField:focus {
+  background-color: rgba(255, 255, 255, 0.503);
+  border: none;
+}
+.devStyle {
+  font-size: 1vw;
+  font-style: italic;
+  color: rgba(106, 255, 215, 0.618);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.buttonStyle {
+  background-color: rgba(11, 76, 27, 0.62);
+  color: rgba(255, 255, 255, 0.677);
+  width: 50%;
+  align-self: end;
+  transition: 
+  color 250ms,
+  background-color 400ms;
+
+  &:hover {
+    color: rgb(241, 255, 241);
+    background-color: rgba(47, 115, 64, 0.787);
+  }
+}
+
+.SpotifyView {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 50vw;
+  /* justify-content: top; */
+  gap: 5vh;
+  padding-top: 3vh; 
+  background-color: rgba(225, 244, 246, 0.258);
+  backdrop-filter: blur(8px);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 3vh;
+  margin: 2vh;
+  padding: 4vh;
+
+}
+.sideNav {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 2vh;
+  padding: 3vh;
+  border-radius: 2vh;
+  gap: 1vh;
+  justify-content: left;
+
+  background-color: rgba(239, 255, 253, 0.291);
+  backdrop-filter: blur(8px);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+p {
+  color: rgb(18, 8, 15);
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3vw;
+}
